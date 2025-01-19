@@ -11,6 +11,8 @@ if (!supabaseUrl || !supabaseKey) {
 export const supabase = createClient<Database>(supabaseUrl, supabaseKey);
 
 let isConnected = false;
+console.log('Supabase URL:', supabaseUrl);
+console.log('Supabase Key:', supabaseKey ? 'Present' : 'Missing');
 
 export async function checkConnection() {
   try {
