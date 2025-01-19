@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import axios from 'axios';
 import { Send } from 'lucide-react';
 import { ChatMessage } from './components/ChatMessage';
-import { getMessages, saveMessage, createMessagesTable, checkConnection } from './lib/db';
+import { getMessages, saveMessage, checkConnection } from './lib/db';
 
 interface Message {
   id: number;
